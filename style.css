@@ -31,18 +31,19 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  gap: 10px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-#name-lastname {
+.info {
   display: flex;
   gap: 10px;
   flex-direction: row;
 }
 
-#name-lastname input {
+.info input {
   width: 48%;
 }
