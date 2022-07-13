@@ -8,11 +8,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 15px;
   background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-login {
   display: flex;
+  gap: 5px;
 }
 
 .trybewarts-header-logo {
