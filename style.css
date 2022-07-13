@@ -6,6 +6,8 @@
 
 main {
   display: flex;
+  justify-content: center;
+  padding: 50px;
 }
 
 .header {
@@ -33,4 +35,14 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#name-lastname {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+#name-lastname input {
+  width: 48%;
 }
