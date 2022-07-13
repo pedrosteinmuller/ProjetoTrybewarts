@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,4 +23,9 @@
 
 .trybewarts-header-logo {
   height: 50px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
