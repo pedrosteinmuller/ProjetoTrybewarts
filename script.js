@@ -1,10 +1,10 @@
-const button = document.querySelector('#btn');
+const button = document.getElementById('btn');
 const email = document.getElementById('emailPlace');
 const password = document.getElementById('passwordPlace');
 const checkBtn = document.getElementById('agreement');
 const subBtn = document.getElementById('submit-btn');
-const dispCount = document.getElementById('counter');
-const counterText = document.getElementsByTagName('textarea')[0];
+const dispCount = document.querySelector('#counter');
+const counterText = document.querySelector('#textarea');
 
 button.addEventListener('click', () => {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
