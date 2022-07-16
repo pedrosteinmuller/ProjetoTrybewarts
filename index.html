@@ -9,63 +9,67 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="trybewarts-header-logo"
-        src="images/trybewarts-header-logo.svg"
-        alt=""
-      />
+      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login">
-        <input type="email" name="email" placeholder="Email" id="emailPlace" />
-        <input
-          type="password"
-          name="password"
-          placeholder="Senha"
-          id="passwordPlace"
-        />
+        <input type="email" placeholder="Email"  name="email" id="emailPlace" />
+        <input type="password" placeholder="Senha" name="password" id="passwordPlace" />
         <button type="submit" id="btn">Entrar</button>
       </form>
     </header>
 
     <main>
-      <form id="evaluation-form" method="get">
-        <div class="info">
+      <form id="evaluation-form" method="get" >
+        <h2>Formulário de Avaliação</h2>
+        <section class="personal-info">
           <input type="text" placeholder="Nome" id="input-name" />
           <input type="text" placeholder="Sobrenome" id="input-lastname" />
-        </div>
-        <div class="info">
           <input type="email" placeholder="Email" id="input-email" />
-          <label>Casa:</label>
-          <select name="" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
-        </div>
+          <div>
+            <label>Casa:</label>
+            <select name="input-house" id="house">
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </div>
+        </section>
         <hr />
-        <div>
-          <label id="label-family">Qual sua família?</label> <br />
-          <input type="radio" name="family" value="Frontend" /> Família Frontend
-          <br />
-          <input type="radio" name="family" value="Backend" /> Família Backend
-          <br />
-          <input type="radio" name="family" value="FullStack" /> Família
-          FullStack
-        </div>
-        <div>
-          <label id="label-content"
-            >Qual conteúdo você está com mais vontade de aprender?</label
-          ><br />
-          <input type="checkbox" class="subject" value="HoFs" /> HoFs
-          <input type="checkbox" class="subject" value="Jest" /> Jest
-          <input type="checkbox" class="subject" value="Promises" /> Promises
-          <input type="checkbox" class="subject" value="React" /> React
-          <input type="checkbox" class="subject" value="SQL" /> SQL
-          <input type="checkbox" class="subject" value="Python" /> Python
-        </div>
+        <section class="family-and-subject">
+          <div class="family-info">
+            <label id="label-family">Qual sua família?</label> <br />
+            <input type="radio" name="family" value="Frontend" id="frontend-family" />  
+            <label for="frontend-family">Família Frontend</label> <br />
+            <input type="radio" name="family" value="Backend" id="backend-family" /> 
+            <label for="backend-family">Família Backend</label> <br />
+            <input type="radio" name="family" value="FullStack" id="fullstack-family" /> 
+            <label for="fullstack-family">Família FullStack</label>
+          </div>
+          <div class="subject-info">
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label> <br /><br />
+            <label>
+              <input type="checkbox" class="subject" value="HoFs" /> HoFs
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="Jest" /> Jest
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="Promises" /> Promises
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="React" /> React
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="SQL" /> SQL
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="Python" /> Python
+            </label>
+          </div>
+        </section>
         <hr />
-        <div>
+        <section>
           <label id="label-rate">Como você avalia a Trybewarts?</label>
           <input type="radio" name="rate" value="1" />1
           <input type="radio" name="rate" value="2" />2
@@ -77,20 +81,19 @@
           <input type="radio" name="rate" value="8" />8
           <input type="radio" name="rate" value="9" />9
           <input type="radio" name="rate" value="10" />10
-        </div>
-        <div>
+        </section>
+        <section>
           <label class="textarea">Deixe seu comentário:</label>
-          <textarea id="textarea" maxlength="500" rows="5" cols="82" ></textarea>
+          <textarea id="textarea" maxlength="500" rows="5" ></textarea> 
           <span id="counter">500</span>
-        </div>
-        <div>
-          <label id="label-infos"
-            >Você concorda com o uso das informações acima?</label
-          >
+        </section>
+        <section>
+          <label id="label-infos">Você concorda com o uso das informações acima?</label> <!-- formatação desta linha foi alterada -->
           <input type="checkbox" id="agreement" />
-        </div>
+        </section>
         <button type="submit" id="submit-btn" disabled="true">Enviar</button>
       </form>
+      <form id="form-data"></form>
 
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" />
     </main>
@@ -99,4 +102,4 @@
     <script src="script.js"></script>
   </body>
 </html>
-
+</html>
